@@ -14,8 +14,7 @@ compinit
 # End of lines added by compinstall
 #
 alias ll='ls -al'
-alias gw="cd /Users/sto268/go/src/data61.githost.io/digital-regulation"
-alias sw="cd /Users/sto268/code/paidright"
+alias sw="cd /Users/sto268/code/data61.githost.io"
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias kc="kubectl"
@@ -23,7 +22,8 @@ alias kc="kubectl"
 GOPATH="/Users/sto268/code/go"
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
