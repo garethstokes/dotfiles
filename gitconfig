@@ -1,0 +1,5 @@
+[user]
+	email = gareth.stokes@data61.csiro.au
+	name = gareth stokes
+[core]
+	editor = nvim
